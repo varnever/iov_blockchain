@@ -1,3 +1,3 @@
 #!/bin/bash
 
-peer chaincode query -C mychannel -n mycc -c '{"Args":["query","'$1'"]}'
+docker exec -it cli /bin/bash /home/Shell/query.sh $var | grep Query
